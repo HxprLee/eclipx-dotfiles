@@ -1,0 +1,11 @@
+* {
+    background:             rgba(25, 31, 36, 0.7);
+    background-solid:       rgba(25, 31, 36, 1);
+    background-alt:         rgba(43, 49, 54, 0.7);
+    foreground:             #FFFFFFFF;
+    selected:               #FFEFAFFF;
+    border-highlight:       rgba(255, 239, 175, 0.1);
+    active:                 #AFFFB2FF;
+    urgent:                 #FF5849FF;
+    font:                   "Iosevka Nerd Font Bold 11";
+}

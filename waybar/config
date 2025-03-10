@@ -1,0 +1,92 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 47, // Waybar height
+    // "width": 120, // Waybar width
+    // Choose the order of the modules
+    "modules-left": ["hyprland/workspaces", "custom/wayves", "pulseaudio", "hyprland/window"],
+    "modules-right": ["network", "cpu", "memory", "battery", "tray", "clock", "custom/powermenu"], 
+     "hyprland/workspaces": {
+         "disable-scroll": true,
+         "disable-markup" : false,
+         "all-outputs": true,
+         "format": "  {icon}  ",
+         //"format":"{icon}",
+         "format-icons": {
+             "active": "",
+             "default": ""
+         }
+     },
+     "hyprland/window": {
+        "format": "{initialTitle}",
+        "icon": true,
+        "icon-size": 18,
+        "separate-outputs": true
+     },
+
+    "custom/wayves": {
+        "format": "{}",
+        "exec": "python ~/.config/waybar/modules/wayves/wayves.py -o cava -i cava -a cava",
+        "on-click": "playerctl play-pause"
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "{:%Y-%m-%d | %H:%M}",
+        "format-alt": "{:%H:%M | %Y-%m-%d}"
+    },
+    "custom/powermenu": {
+	"format": "",
+	"on-click": "./.config/rofi/scripts/powermenu/powermenu.sh"
+    },
+    "cpu": {
+        "format": "  {usage}%"
+    },
+    "memory": {
+        "format": "  {}%"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        // "interface": "wlp2s0", // (Optional) To force the use of this interface
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-disconnected": "Disconnected ⚠",
+        "interval" : 7
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}%  ",
+        "format-muted": "",
+        "on-click": "pavucontrol",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+    }
+}
+}
