@@ -3,6 +3,7 @@
 # Initial release of my personal dotfiles
 
 - **There's an install scripts but it isn't really complete yet, I won't take responsibility if your system is bricked**
+- The config is still very basic so it lacks a lot of features
 - Assuming that you have all the packages listed here, the config should be working:
 ```
 rofi-wayland swww waybar cava libcava kitty thunar hyprshot zenity hyprlock nerd-fonts
