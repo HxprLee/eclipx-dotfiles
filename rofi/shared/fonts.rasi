@@ -1,0 +1,8 @@
+* {
+    font-light:                    "Iosevka Nerd Font Light 11";
+    font-normal:                   "Iosevka Nerd Font 11";
+    font-bold:                     "Iosevka Nerd Font Bold 11";
+    font-extrabold:                "Iosevka Nerd Font Extrabold 11";
+    font-black:                    "Iosevka Nerd Font Heavy 11";
+}  
+  

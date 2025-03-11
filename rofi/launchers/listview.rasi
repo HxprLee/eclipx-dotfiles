@@ -10,7 +10,13 @@ configuration {
 	window-format:              "{w} · {c} · {t}";
 }
 
-@import  "~/.config/rofi/colors/eclipx.rasi"
+@import  "~/.config/rofi/shared/color.rasi"
+@import  "~/.config/rofi/shared/fonts.rasi"
+
+
+*{
+    font:                        var(font-normal);
+}
 
 /* Main Window */
 window {
@@ -58,8 +64,8 @@ inputbar {
     margin:                      0px;
     padding:                     14px 20px;
     border-radius:               8px;
-    border-color: 		 var(border-highlight);
-    border:			 1px;
+    border-color: 		         var(border-highlight);
+    border:			             1px;
     background-color:            @background-alt;
     text-color:                  @selected;
     children:                    [ "textbox-prompt-colon", "entry" ];
@@ -72,20 +78,21 @@ prompt {
 }
 textbox-prompt-colon {
     enabled:                     true;
-    padding:                     5px 7px 0px 0px;
+    padding:                     5px 9px 0px 2px;
     expand:                      false;
     str:                         " ";
     background-color:            transparent;
-    text-color:                  inherit;
+    text-color:                  @selected;
 }
 entry {
     enabled:                     true;
     padding:                     5px 0px;
     background-color:            transparent;
-    text-color:                  inherit;
+    text-color:                  @selected;
     cursor:                      text;
     placeholder:                 "Search...";
-    placeholder-color:           inherit;
+    font:                        @font-bold;
+    placeholder-color:           @selected-tinted;
 }
 num-filtered-rows {
     enabled:                     true;
@@ -137,8 +144,8 @@ scrollbar {
     handle-width:                3px;
     handle-color:                @selected;
     border-radius:               10px;
-    border-color: 		 var(border-highlight);
-    border:			 1px;
+    border-color: 		         var(border-highlight);
+    border:			             1px;
     background-color:            @background-alt;
 }
 
@@ -157,15 +164,15 @@ element {
 element normal.normal {
     background-color:            var(background-alt);
     text-color:                  var(selected);
-    border-color:		 var(border-highlight);
-    border:			 1px;
+    border-color:		         var(border-highlight);
+    border:			             1px;
 }
 
 element alternate.normal {
     background-color:            var(background-alt);
     text-color:                  var(selected);
-    border-color:		 var(border-highlight);
-    border:			 1px;
+    border-color:		         var(border-highlight);
+    border:			             1px;
 }
 
 element selected.normal {
@@ -176,15 +183,15 @@ element selected.normal {
 element normal.urgent {
     background-color:            var(background-alt);
     text-color:                  var(urgent);
-    border-color:		 var(border-highlight);
-    border:			 1px;
+    border-color:		         var(border-highlight);
+    border:			             1px;
 }
 
 element alternate.urgent {
     background-color:            var(background-alt);
     text-color:                  var(urgent);
-    border-color:		 var(border-highlight);
-    border:			 1px;
+    border-color:		         var(border-highlight);
+    border:			             1px;
 }
 
 element selected.urgent {
@@ -195,15 +202,15 @@ element selected.urgent {
 element normal.active {
     background-color:            var(background-alt);
     text-color:                  var(active);
-    border-color:		 var(border-highlight);
-    border:			 1px;
+    border-color:		         var(border-highlight);
+    border:			             1px;
 }
 
 element alternate.active {
     background-color:            var(background-alt);
     text-color:                  var(active);
-    border-color:		 var(border-highlight);
-    border:			 1px;  
+    border-color:		         var(border-highlight);
+    border:			             1px;  
 }
 
 element selected.active {
@@ -242,8 +249,8 @@ mode-switcher{
 button {
     padding:                     0px 20px 0px 20px;
     border-radius:               8px;
-    border-color:		 var(border-highlight);
-    border:			 1px;
+    border-color:		         var(border-highlight);
+    border:			             1px;
     background-color:            @background-alt;
     text-color:                  inherit;
     vertical-align:              0.5;
@@ -260,8 +267,8 @@ message {
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border-color:		 var(border-highlight);
-    border:			 1px;
+    border-color:	        	 var(border-highlight);
+    border:			             1px;
     border-radius:               8px;
     background-color:            transparent;
     text-color:                  @selected;

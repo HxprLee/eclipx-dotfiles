@@ -2,11 +2,16 @@ configuration {
     show-icons:                 false;
 }
 
-@import  "~/.config/rofi/colors/eclipx.rasi"
+@import  "~/.config/rofi/shared/color.rasi"
+@import  "~/.config/rofi/shared/fonts.rasi"
 
 /*
 USE_BUTTONS=YES
 */
+
+* {
+    font: var(font-bold);
+}
 
 /*****----- Main Window -----*****/
 window {
@@ -141,9 +146,9 @@ element {
     enabled:                     true;
     spacing:                     0px;
     margin:                      0px;
-    padding:                     27px 2px 37px 1px;
+    padding:                     27px 1px 37px 1px;
     border:                      1px solid;
-    border-radius:               8px;
+    border-radius:               6px;
     border-color:                @border-highlight;
     background-color:            @background-alt;
     text-color:                  @foreground;
