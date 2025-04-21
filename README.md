@@ -2,7 +2,7 @@
 
 # Initial release of my personal dotfiles
 
-- **There's an install scripts but it isn't really complete yet, I won't take responsibility if your system is bricked**
+- ~~**There's an install scripts but it isn't really complete yet, I won't take responsibility if your system is bricked**~~ **The install script is broken and I'm lazy to fix**
 - The config is still very basic so it lacks a lot of features
 - Assuming that you have all the packages listed here, the config should be working:
 ```
