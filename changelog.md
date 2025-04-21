@@ -5,3 +5,4 @@
 - added hyprsunset toggle on waybar
 - added basic hypridle
 - removed unnescessary texts in some config file 
+- using walker as XDPH screenshare selector 
