@@ -1,0 +1,172 @@
+
+@define-color background-solid rgba(25, 31, 36, 1);
+@define-color background-alt rgba(43, 49, 54, 0.45);
+@define-color background rgba(25, 31, 36, 0.7);
+@define-color color1 rgba(255, 239, 175, 0.1);
+@define-color foreground rgba(255, 239, 175, 1);
+@define-color foreground-alt rgba(255, 239, 175, 0.6);
+@define-color border rgba(255, 239, 175, 0.1);
+
+#window,
+#box,
+#aiScroll,
+#aiList,
+#search,
+#password,
+#input,
+#prompt,
+#clear,
+#typeahead,
+#list,
+child,
+scrollbar,
+slider,
+#item,
+#text,
+#label,
+#bar,
+#sub,
+#activationlabel {
+  all: unset;
+}
+
+#cfgerr {
+  background: rgba(255, 0, 0, 0.4);
+  margin-top: 20px;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#window {
+  color: @foreground;
+}
+
+#box {
+  background: @background;
+  padding: 20px;
+  border: 1px solid;
+  border-color: @border;
+  border-radius: 10px;
+}
+
+#search {
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.22);
+  background: @background-alt;
+  border: 1px solid;
+  border-color: @border;
+  padding: 16px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+}
+
+#prompt {
+  margin-left: 0px;
+  margin-right: 16px;
+  color: @foreground-alt;
+}
+
+#clear {
+  color: @foreground;
+  opacity: 0.8;
+}
+
+#password,
+#input,
+#typeahead {
+  border-radius: 2px;
+}
+
+#input {
+  background: none;
+}
+
+#password {
+}
+
+#spinner {
+  padding: 8px;
+}
+
+#typeahead {
+  color: @foreground;
+  opacity: 0.8;
+}
+
+#input placeholder {
+  opacity: 0.6;
+  font-weight: 700;
+}
+
+#list {
+}
+
+child {
+  padding: 9px;
+  border-radius: 8px;
+  font-weight: 400;
+  margin-bottom: 4px;
+  background: @background-alt;
+  border: 1px solid;
+  border-color: @border;
+}
+
+child:selected,
+child:hover {
+  background: @foreground;
+  color: @background-solid;
+}
+
+#item {
+}
+
+#icon {
+  margin-right: 8px;
+}
+
+#text {
+}
+
+#label {
+  font-weight: 400;
+}
+
+#sub {
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+#activationlabel {
+}
+
+#bar {
+}
+
+.barentry {
+}
+
+.activation #activationlabel {
+}
+
+.activation #text,
+.activation #icon,
+.activation #search {
+  opacity: 0.5;
+}
+
+.aiItem {
+  padding: 10px;
+  border-radius: 2px;
+  color: @foreground;
+  background: @background;
+}
+
+.aiItem.user {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.aiItem.assistant {
+  background: lighter(@background);
+}
