@@ -6,7 +6,7 @@
 - The config is still very basic so it lacks a lot of features
 - Assuming that you have all the packages listed here, the config should be working:
 ```
-rofi-wayland swww waybar cava libcava kitty nautilus hyprshot zenity hyprlock nerd-fonts
+rofi-wayland walker swww waybar cava libcava kitty nautilus hyprshot zenity hyprlock nerd-fonts
 ```
 
 - This config is made especially for 1080p display so you should change the config according to your display and your need
