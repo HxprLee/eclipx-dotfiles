@@ -6,3 +6,9 @@
 - added basic hypridle
 - removed unnescessary texts in some config file 
 - using walker as XDPH screenshare selector 
+
+#Changelog 2025-05-03
+- added alternative lockscreen
+- added a battery status on the lockscreen (credit to @HyDE-Project for the battery scripts)
+- removed unnecessary files
+- changed hypridle 
