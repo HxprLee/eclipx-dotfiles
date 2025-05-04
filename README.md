@@ -15,19 +15,23 @@ rofi-wayland walker swww waybar cava libcava kitty nautilus hyprshot zenity hypr
 ### Here are some examples
 
 Desktop:
-![desktop](https://github.com/user-attachments/assets/119786f5-838e-4bf5-a96f-f5a07212ead0)
+![desktop](https://raw.githubusercontent.com/hxprlee/eclipx-dotfiles/main/eclipx/examples/desktop.png)
 
 Launcher:
-![launcher](https://github.com/user-attachments/assets/f81a36d3-b59a-4a65-85bd-55e92df262ca)
+![launcher](https://raw.githubusercontent.com/hxprlee/eclipx-dotfiles/main/eclipx/examples/launcher.png)
 
 Powermenu:
-![powermenu](https://github.com/user-attachments/assets/3cca3f6f-ef62-4ec8-92a2-247243a5fd3b)
+![powermenu](https://raw.githubusercontent.com/hxprlee/eclipx-dotfiles/main/eclipx/examples/powermenu.png)
 
 Screenshot menu:
-![screenshot](https://github.com/user-attachments/assets/c0263f75-4a8b-4e88-8ea5-e207815a3521)
+![screenshot](https://raw.githubusercontent.com/hxprlee/eclipx-dotfiles/main/eclipx/examples/screenshot.png)
 
 Lockscreen:
-![lockscreen](https://github.com/user-attachments/assets/4f63c59d-d3f8-4671-b58e-3f112240786e)
+![lockscreen](https://raw.githubusercontent.com/hxprlee/eclipx-dotfiles/main/eclipx/examples/lockscreen_1.png)
+
+Lockscreen 2:
+![lockscreen](https://raw.githubusercontent.com/hxprlee/eclipx-dotfiles/main/eclipx/examples/lockscreen_2.png)
+
 
 
 
