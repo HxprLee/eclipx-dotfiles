@@ -32,6 +32,8 @@ Lockscreen:
 Lockscreen 2:
 ![lockscreen](https://raw.githubusercontent.com/hxprlee/eclipx-dotfiles/main/eclipx/examples/lockscreen_2.png)
 
+fastfetch:
+![fastfetch](https://raw.githubusercontent.com/hxprlee/eclipx-dotfiles/main/eclipx/examples/fastfetch.png)
 
 
 
