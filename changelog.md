@@ -9,7 +9,7 @@
 
 ## Changelog 2025-05-03
 - added alternative lockscreen
-- added a battery status on the lockscreen (credit to @HyDE-Project for the battery scripts)
+- added a battery status on the lockscreen (credit to [@HyDE-Project](https://github.com/HyDE-Project) for the battery scripts)
 - removed unnecessary files
 - changed hypridle 
 
