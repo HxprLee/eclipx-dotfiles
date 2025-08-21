@@ -2,11 +2,10 @@
 
 # Initial release of my personal dotfiles
 
-- ~~**There's an install scripts but it isn't really complete yet, I won't take responsibility if your system is bricked**~~ **The install script is broken and I'm lazy to fix**
 - The config is still very basic so it lacks a lot of features
 - Assuming that you have all the packages listed here, the config should be working:
 ```
-rofi-wayland walker swww waybar cava libcava kitty nautilus hyprshot zenity hyprlock nerd-fonts fastfetch
+rofi-wayland walker swww waybar cava libcava kitty nautilus hyprshot zenity hyprlock nerd-fonts fastfetch swaync
 ```
 
 - This config is made especially for 1080p display so you should change the config according to your display and your need

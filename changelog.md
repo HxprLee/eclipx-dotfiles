@@ -17,3 +17,7 @@
 - added fastfetch for no reason
 - that's it
 - literally
+
+## Changelog 2025-08-21
+- using swaync as notification daemon
+- planning to switch to quickshell 
