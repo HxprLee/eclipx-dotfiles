@@ -5,7 +5,7 @@
 - The config is still very basic so it lacks a lot of features
 - Assuming that you have all the packages listed here, the config should be working:
 ```
-rofi-wayland walker swww waybar cava libcava kitty nautilus hyprshot zenity hyprlock nerd-fonts fastfetch swaync
+rofi-wayland vicinae swww waybar cava libcava kitty thunar hyprshot zenity hyprlock nerd-fonts fastfetch swaync
 ```
 
 - This config is made especially for 1080p display so you should change the config according to your display and your need
@@ -16,7 +16,7 @@ rofi-wayland walker swww waybar cava libcava kitty nautilus hyprshot zenity hypr
 Desktop:
 ![desktop](https://raw.githubusercontent.com/hxprlee/eclipx-dotfiles/main/eclipx/examples/desktop.png)
 
-Launcher:
+Launcher (old):
 ![launcher](https://raw.githubusercontent.com/hxprlee/eclipx-dotfiles/main/eclipx/examples/launcher.png)
 
 Powermenu:
