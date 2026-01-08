@@ -1,0 +1,31 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "kitty",        // Logo type: auto, builtin, small, file, etc.
+    "source": "$HOME/.config/eclipx/logo.png",      // Built-in logo name or file path
+    "width": 28,           // Width in characters (for image logos)
+    "height": 13,          // Height in characters (for image logos)
+    "padding": {
+        "top": 0,          // Top padding
+        "left": 0,         // Left padding
+        "right": 2         // Right padding
+    }
+},
+"modules": [
+    "title",
+    "separator",
+    "os",
+    "kernel",
+    "packages",
+    "shell",
+    "de",
+    "wm",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "localip",
+    "break",
+    "colors"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 47, // Waybar height
+    // "width": 120, // Waybar width
+    // Choose the order of the modules
+    "modules-left": ["hyprland/workspaces", "custom/wayves", "pulseaudio", "hyprland/window"],
+    "modules-right": ["power-profiles-daemon", "custom/filter", "cpu", "memory", "battery", "tray", "clock", "custom/powermenu"], 
+     "hyprland/workspaces": {
+         "disable-scroll": false,
+         "disable-markup" : false,
+         "all-outputs": true,
+         "format": "{icon}",
+         //"format":"{icon}",
+         "format-icons": {
+             "active": "",
+             "default": "",
+	     "urgent": ""
+         }
+     },
+     "hyprland/window": {
+        "format": "{initialTitle}",
+        "icon": true,
+        "icon-size": 18,
+        "separate-outputs": true
+     },
+
+    "custom/wayves": {
+        "format": "{}",
+        "exec": "python ~/.config/waybar/modules/wayves/wayves.py -o cava -i cava -a cava",
+        "on-click": "playerctl play-pause"
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    "clock": {
+	"format" : "󰥔  {:%H:%M}",
+        "tooltip-format": "󰥔  {:%Y-%m-%d | %H:%M}",
+        "format-alt": "󰥔  {:%H:%M | %Y-%m-%d}"
+    },
+    "custom/powermenu": {
+	"format": "",
+	"on-click": "./.config/rofi/scripts/powermenu/powermenu.sh"
+    },
+    "power-profiles-daemon": {
+        "format": "{icon} ",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+          "default": "",
+          "performance": "",
+          "balanced": "",
+          "power-saver": ""
+        }
+      },
+    "custom/filter": {
+        "format": " ",
+        "on-click": "$HOME/.config/waybar/scripts/filter_toggle.sh"
+    },
+    "cpu": {
+        "format": "  {usage}%"
+    },
+    "memory": {
+        "format": "  {}%"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "{icon} Fully charged",
+        "format-icons": ["󰂎", "󰁻", "󰁾", "󰂀", "󰁹"]
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}%  ",
+        "format-muted": "󰸈 ",
+        "on-click": "pavucontrol",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+    }
+}
+}
